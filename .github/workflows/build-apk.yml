@@ -24,6 +24,9 @@ jobs:
         with:
           gradle-version: 8.2.1
 
+      - name: Make gradlew executable
+        run: chmod +x gradlew
+
       - name: Install Android SDK
         run: |
           sudo mkdir -p /usr/local/lib/android/sdk
